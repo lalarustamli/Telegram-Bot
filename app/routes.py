@@ -1,13 +1,18 @@
+from flask import Flask
 from flask import request
 from app import app
 from app import bot
 import telegram
 
-@app.route("/",methods=['GET', 'POST'])
-def hello_world():
-    if request.method == "GET":
-        print 'Hello, World!'
+app = Flask(__name__)
 
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    app.run()
 
 # @app.route("/webhook", methods=['GET', 'POST'])
 # def listen():
