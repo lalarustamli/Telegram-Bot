@@ -16,6 +16,10 @@ def getme():
     d = res.json()
     username = d['result']['username']
 
+def get_json_from_url(url):
+    content = get_url(url)
+    js = json.loads(content)
+    return js
 
 def get_updates(offset=None):
     while True:

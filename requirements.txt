@@ -1,0 +1,17 @@
+bottle==0.12.17
+certifi==2019.9.11
+config==0.4.2
+defusedxml==0.6.0
+entrypoints==0.3
+Flask==1.1.1
+graphviz==0.13
+gunicorn==19.9.0
+Jinja2==2.10.1
+lxml==4.4.1
+numpy==1.17.2
+pandas==0.25.1
+pymongo==3.9.0
+python-telegram-bot==4.0rc1
+requests==2.22.0
+telegram==0.0.1
+urllib3==1.25.6
