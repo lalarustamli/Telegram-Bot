@@ -3,9 +3,10 @@ from app import app
 from app import bot
 import telegram
 
-@app.route("/")
+@app.route("/",methods=['GET', 'POST'])
 def hello_world():
-    print 'Hello, World!'
+    if request.method == "GET":
+        print 'Hello, World!'
 
 
 # @app.route("/webhook", methods=['GET', 'POST'])
