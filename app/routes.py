@@ -7,9 +7,10 @@ import telegram
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/',methods=['GET', 'POST'])
 def hello_world():
-    return 'Hello, World!'
+    if request.method == "GET":
+        return 'Hello, World!'
 
 if __name__ == '__main__':
     app.run()
